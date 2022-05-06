@@ -64,7 +64,7 @@ console.log("Titulo y Autor: " + pullRequest.getTitleAndAuthor() + "\n")
 
 
 
-
+ //twitter
 const user = {
   plataform: "twitter",
   username: "Cristhian Rosales",
@@ -109,3 +109,53 @@ const hashtag = {
 console.log(user.getDatos()+ "\n")
 console.log(trendicTopic.getTrend()+ "\n")
 console.log(hashtag.getHastag())
+//fin de Twitter
+
+//Facebook
+const profile = {
+  plataform: "Facebook",
+  name: "Cristhian Rosales",
+  description: "Ing. de Software",
+  friends: 250,
+  start: "28/05/2015",
+
+  getProfile: function() {
+  return `
+  ${this.plataform}
+  Nombre: ${this.name}
+  Sobre mi: ${this.description}
+  Amigos: ${this.friends}
+  Creado: ${this.start}`
+  }
+}
+
+const post = {
+  author: "Benedeto Barrera",
+  description: "Tanto por una gota de sangre",
+  likes: 5000,
+  comments: 100,
+  shares: 150,
+
+  getPost: function() {
+    return `
+    ${this.author}
+    ${this.description}
+    reacciones: ${this.likes} comentarios: ${this.comments} compartido: ${this.shares}`
+  }
+}
+console.log(profile.getProfile() + "\n")
+console.log(post.getPost() + "\n")
+
+const rappy = {
+  name: "Cristhian Rosales",
+  location: "5570, boca del cielo",
+
+  getRappy: function() {
+
+  return `
+  ${this.name}
+  ${this.location}`
+  }  
+}
+
+console.log(rappy.getRappy())
